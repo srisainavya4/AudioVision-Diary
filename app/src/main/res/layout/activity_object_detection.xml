@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/objLay"
+    tools:context=".Activities.ObjectDetectionActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/fifteen_dp"></ImageView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewSplash"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/image"
+        android:layout_margin="@dimen/twentyfour"
+        android:background="@color/transparent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="speak.json"
+        app:lottie_loop="true" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animationViewSplash"
+        app:cardCornerRadius="@dimen/eight_dp"
+        android:layout_margin="@dimen/eight_dp"
+        app:cardElevation="5dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResult"
+            android:padding="@dimen/eight_dp"
+            android:layout_margin="@dimen/eight_dp"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="start"
+            android:text="Analyze Surrounding"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

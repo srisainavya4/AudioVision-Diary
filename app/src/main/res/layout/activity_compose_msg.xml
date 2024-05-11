@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/smsLay"
+    tools:context=".Activities.ComposeMsgActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:orientation="vertical"
+        android:padding="@dimen/fifteen_dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:fontFamily="@font/abel"
+            android:text="Enter Your Message"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSenderNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:background="@drawable/edit_text_style"
+            android:fontFamily="@font/abel"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/fifteen_dp"
+            android:textColorHint="#1e1c11" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:background="@drawable/edit_text_style"
+            android:fontFamily="@font/abel"
+            android:hint="Enter Message"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/fifteen_dp"
+            android:textColorHint="#1e1c11" />
+
+    </LinearLayout>
+
+</RelativeLayout>

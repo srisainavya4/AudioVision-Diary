@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/addPersonLay"
+    tools:context=".Activities.AddPersonActivity">
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/abel"
+        android:hint="Enter Person Name"
+        android:inputType="text"
+        android:layout_margin="@dimen/thirty"
+        android:padding="@dimen/fifteen_dp"
+        android:textColorHint="#1e1c11" />
+
+</LinearLayout>

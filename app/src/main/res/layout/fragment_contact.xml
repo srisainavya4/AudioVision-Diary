@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ContactFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:id="@+id/contactRV"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txtNoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/abel"
+        android:padding="@dimen/eight_dp"
+        android:text="No Result Found"
+        android:textColor="#1e1e1e"
+        android:textSize="@dimen/twentyfour"
+        android:visibility="gone" />
+
+</RelativeLayout>
